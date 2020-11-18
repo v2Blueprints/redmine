@@ -1,0 +1,49 @@
+{
+	"title": "redmine",
+	"description": "nginx passenger example",
+	"configuration": {
+		"port": "8080",
+		"servername": "ruby.^^domain_name^^",
+		"ServerAdmin": "redmine Admin",
+		"code_destination": "/var/www/redmine"
+	},
+	"os_packages": {
+		"adds": [
+			"imagemagick",
+			"libmagickwand-dev",
+			"git",
+			"libxml2",
+			"libxml2-dev"
+		]
+	},
+	"bindings": [
+		{
+			"type": "embed",
+			"descriptor": {
+				"repository": "https://github.com/v2Blueprints/ruby_passenger_nginx"
+			},
+			"variables": {
+				"locale": "^^locale^^",
+				"charset": "^^charset^^",
+				"port": "^^port^^",
+				"servername": "^^fqdn^^",
+				"ServerAdmin": "^^ServerAdmin^^",
+				"code_destination": "^^code_destination^^"
+			}
+		},
+		{
+			"descriptor": {
+				"repository": "https://github.com/v2Blueprints/mariadb"
+			},
+			"variables": {
+				"username": "^^identifier^^",
+				"password": "^^random(16)^^"
+			}
+		}
+	],
+	"containers": [
+		{
+			"type": "lxd"
+		}
+	]
+}
