@@ -32,6 +32,12 @@
 			}
 		},
 		{
+			"type": "embed",
+			"descriptor": {
+				"repository": "https://github.com/v2Blueprints/node"
+			}
+		},
+		{
 			"descriptor": {
 				"repository": "https://github.com/v2Blueprints/mariadb"
 			},
