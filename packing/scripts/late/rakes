@@ -1,5 +1,5 @@
 #!/bin/sh
 
-cd  ^^code_destination^^
+cd  ^^ruby_passenger_nginx.code_destination^^
 bundle exec rake generate_secret_token
 bundle exec rake db:migrate

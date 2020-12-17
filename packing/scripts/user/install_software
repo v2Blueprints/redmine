@@ -1,5 +1,0 @@
-#!/bin/sh
-
-git clone  https://github.com/edavis10/redmine.git ^^code_destination^^
-
-/tmp/packing/scripts/user/install_node_modules
