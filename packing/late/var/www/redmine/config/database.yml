@@ -1,0 +1,7 @@
+production:
+ adapter: mysql
+ database: ^^mariadb.database_name^^
+ host: ^^mariadb.hostname^^
+ username: ^^mariadb.username^^
+ password: ^^mariadb.password^^
+ ssl_mode: disabled

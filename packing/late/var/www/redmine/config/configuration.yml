@@ -1,11 +1,11 @@
 production:
  default_url_options:
-  host: ^^fqdn^^
+  host: ^^domain.fqdn^^
  email_delivery:
   delivery_method: :smtp
   smtp_settings:
-   address: stmp
+   address: ^^stmp_host^^
    port: 25
-   domain: ^^domain^^
+   domain: ^^domain.identifier^^
    enable_starttls_auto : false
    attachments_storage_path: /tmp

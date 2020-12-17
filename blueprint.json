@@ -1,13 +1,7 @@
 {
 	"title": "redmine",
 	"description": "nginx passenger example",
-	"configuration": {
-		"port": "8080",
-		"servername": "ruby.^^domain_name^^",
-		"ServerAdmin": "redmine Admin",
-		"code_destination": "/var/www/redmine"
-	},
-	"os_packages": {
+	"system_packages": {
 		"adds": [
 			"imagemagick",
 			"libmagickwand-dev",
@@ -22,14 +16,12 @@
 			"descriptor": {
 				"repository": "https://github.com/v2Blueprints/ruby_passenger_nginx"
 			},
-			"variables": {
-				"locale": "^^locale^^",
-				"charset": "^^charset^^",
-				"port": "^^port^^",
-				"servername": "^^fqdn^^",
-				"ServerAdmin": "^^ServerAdmin^^",
-				"code_destination": "^^code_destination^^"
-			}
+			"locale": "^^locale^^",
+			"charset": "^^charset^^",
+			"port": "8080",
+			"servername": "^^domain.fqdn^^",
+			"ServerAdmin": "redmine Admin",
+			"code_destination": "/var/www/redmine"
 		},
 		{
 			"type": "embed",
@@ -41,10 +33,16 @@
 			"descriptor": {
 				"repository": "https://github.com/v2Blueprints/mariadb"
 			},
-			"variables": {
-				"username": "^^identifier^^",
-				"password": "^^random(16)^^"
-			}
+			"username": "^^identifier^^",
+			"password": "^^random(16)^^"
+		}
+	],
+	"other_packages": [
+		{
+			"descriptor": {
+				"repository": "https://github.com/edavis10/redmine.git"
+			},
+			"destination": "ruby_passenger_nginx.code_destination"
 		}
 	],
 	"containers": [

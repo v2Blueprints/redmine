@@ -1,9 +1,8 @@
 #!/bin/sh
 
-cd ^^code_destination^^
+cd ^^ruby_passenger_nginx.code_destination^^
 git pull
 bundle --standalone
 bundle exec rake db:migrate
 
 service nginx restart
-
