@@ -1,0 +1,7 @@
+production:
+ adapter: mysql
+ database: ^^identifier^^
+ host: ^^mysqlhost^^
+ username: ^^username^^
+ password: ^^password^^
+ ssl_mode: disabled

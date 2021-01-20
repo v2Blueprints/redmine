@@ -39,7 +39,7 @@
 	],
 	"other_packages": [
 		{
-			"descriptor": {
+			"target": {
 				"repository": "https://github.com/edavis10/redmine.git"
 			},
 			"destination": "ruby_passenger_nginx.code_destination"
