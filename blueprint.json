@@ -15,7 +15,7 @@
 	"bindings": [
 		{
 			"type": "embed",
-			"descriptor": {
+			"target": {
 				"repository": "https://github.com/v2Blueprints/ruby_passenger_nginx"
 			},
 			"configuration": {
@@ -29,12 +29,12 @@
 		},
 		{
 			"type": "embed",
-			"descriptor": {
+			"target": {
 				"repository": "https://github.com/v2Blueprints/node"
 			}
 		},
 		{
-			"descriptor": {
+			"target": {
 				"repository": "https://github.com/v2Blueprints/mariadb"
 			}
 		}
