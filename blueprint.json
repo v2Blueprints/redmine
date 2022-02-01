@@ -24,7 +24,8 @@
 				"port": "8080",
 				"servername": "^^domain.fqdn^^",
 				"ServerAdmin": "redmine Admin",
-				"code_destination": "/var/www/redmine"
+				"code_destination": "/var/www/redmine",
+				"ruby_version": 2.5
 			}
 		},
 		{
