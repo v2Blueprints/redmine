@@ -4,7 +4,7 @@ production:
  email_delivery:
   delivery_method: :smtp
   smtp_settings:
-   address: ^^stmp_host^^
+   address: ^^configuration.stmp_host^^
    port: 25
    domain: ^^domain.identifier^^
    enable_starttls_auto : false
