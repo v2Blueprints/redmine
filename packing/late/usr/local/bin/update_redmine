@@ -2,7 +2,10 @@
 
 cd ^^ruby_passenger_nginx.code_destination^^
 git pull
+
+bundle exec rake generate_secret_token
+bundle exec rake seed
 bundle --standalone
 bundle exec rake db:migrate
 
-service nginx restart
+
