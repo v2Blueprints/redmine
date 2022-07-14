@@ -40,7 +40,7 @@
 			}
 		}
 	],
-	"other_packages": [
+	"bundled_packages": [
 		{
 			"target": {
 				"repository": "https://github.com/edavis10/redmine.git"
