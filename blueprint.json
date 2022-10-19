@@ -19,8 +19,8 @@
 				"repository": "https://github.com/v2Blueprints/ruby_passenger_nginx"
 			},
 			"configuration": {
-				"locale": "^^locale^^",
-				"charset": "^^charset^^",
+				"locale": "en_AU",
+				"charset": "utf8",
 				"port": "8080",
 				"servername": "^^domain.fqdn^^",
 				"ServerAdmin": "redmine Admin",
